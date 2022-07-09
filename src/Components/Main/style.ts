@@ -3,14 +3,22 @@ import styled from "styled-components";
 
 
 export const MainBg = styled.main`
-    width: 420px;
-    height: 240px;
+    width: 450px;
     background: hsl(217, 19%, 24%);
     border-radius: 0.7rem;
     box-shadow: 0 0 15px 1px hsl(218, 23%, 16%);
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 470px){
+        width: 400px;
+    }
+    @media (max-width: 409px){
+        width: 350px;
+    }
+    @media (max-width: 361px){
+        width: 310px;
+    }
 `
 
 export const MainContainer = styled.div`
@@ -43,6 +51,7 @@ export const MainContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     }
     .generatorText{
         width: 100%;
@@ -67,3 +76,5 @@ export const MainContainer = styled.div`
         }
     }
 `
+
+
